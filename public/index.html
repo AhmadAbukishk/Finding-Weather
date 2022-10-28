@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather.io</title>
+
+    <!-- Font font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Introduction section -->
+    <section id = 'introduction-section' class = "container-fluid">
+        <img src = 'images/cloud.svg' class = "cloud-img img-fluid mt-5">
+        <div class = "introduction-text">
+            <h1 class = ''>WEATHER.IO</h1>
+            <h4> Find the weather anywhere in earth</h4>
+        </div>
+        <img src = 'images/cloud.svg' class = "cloud-img2 img-fluid position-relative">
+        <img src="images/hill.svg" class = "hill-img position-absolute start-0 img-fluid">
+        <img src="images/hill.svg" class = "hill-img position-absolute end-0 img-fluid">
+
+
+    </section>
+
+    <section id="interactive-section" class = "container-fluid">
+        <div class = "weather-display border border-3 rounded-5 border-dark row">
+            <div class = "col-5 temp pt-3">
+                <h5 class = "my-5">Result will display here</h5>
+            </div>
+
+            <div class = "col-7 border-start border-3 border-dark">
+              <div class ="row">
+                <h5 class = "col-12 mb-4 mt-4"> Weather: </h5>
+                <h5 class = "col-12 mb-4"> Wind speed: </h5>
+                <h5 class = "col-12 mb-4"> UV: </h5>
+              </div>  
+
+            </div>
+        </div>
+
+        <form action="" method ="post" class = "row g-3 mt-3 align-items-center">
+            <div class = "col-3">
+                <input type='text' class ="form-control" id = "city" required>
+            </div>
+            <div class = "col-2">
+                <input type='text' class ="form-control" id = "country" required>
+            </div>
+            <div class = "col-4">
+                <button type="submit" class = "btn btn-dark">Find weather</button> 
+            </div>
+        </form>
+    </section>
+</body>
+</html>
