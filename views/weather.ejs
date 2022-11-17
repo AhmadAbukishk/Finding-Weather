@@ -1,0 +1,56 @@
+<%- include('header.ejs')%>
+
+<body>
+    <!-- Introduction section -->
+    <section id = 'introduction-section' class = "container-fluid">
+        <img src = 'images/cloud.svg' class = "cloud-img img-fluid mt-5">
+        <div class = "introduction-text">
+            <h1 class = ''>WEATHER.IO</h1>
+            <h4> Find the weather anywhere in earth</h4>
+        </div>
+        <img src = 'images/cloud.svg' class = "cloud-img2 img-fluid position-relative">
+        <img src="images/hill.svg" class = "hill-img position-absolute start-0 img-fluid">
+        <img src="images/hill.svg" class = "hill-img position-absolute end-0 img-fluid">
+
+
+    </section>
+
+    <section id="interactive-section" class = "container-fluid">
+        <div class = "weather-display border border-3 rounded-5 border-dark row">
+            <div class = "col-5 temp pt-3">
+                <%-temp%>
+                <img class = "tempIcon" src = <%=icon%>> 
+                
+            </div>
+
+            <div class = "col-7 border-start border-3 border-dark">
+              <div class ="row">
+                <h5 class = "col-12 mb-4 mt-4 weather"> Weather: <%=weather%></h5>
+                <h5 class = "col-12 mb-4 wind-speed"> Wind speed: <%=windSpeed%></h5>
+                <h5 class = "col-12 mb-4 humidty"> Humidty: <%=humidty%></h5>
+              </div>  
+
+            </div>
+        </div>
+
+        <form action="/" method ="post" class = "row g-3 mt-3 align-items-center">
+            <div class = "col-md-3 col-6">
+                <input type='text' class ="form-control" name = "city" required>
+            </div>
+            <div class = "col-md-2 col-6">
+                <input type='text' class ="form-control" name = "country" required>
+            </div>
+            <div class = "col-md-4 col-sm-2">
+                <button type="submit" class = "btn btn-dark">Find weather</button> 
+            </div>
+        </form>
+    </section>
+
+
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> 
+
+     <!-- javascript -->
+     <!-- <script src = "script.js"></script> -->
+</body>
+</html>

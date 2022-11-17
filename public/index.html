@@ -21,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+   
+
+
 
 </head>
 <body>
@@ -46,25 +49,32 @@
 
             <div class = "col-7 border-start border-3 border-dark">
               <div class ="row">
-                <h5 class = "col-12 mb-4 mt-4"> Weather: </h5>
-                <h5 class = "col-12 mb-4"> Wind speed: </h5>
-                <h5 class = "col-12 mb-4"> UV: </h5>
+                <h5 class = "col-12 mb-4 mt-4 weather"> Weather: </h5>
+                <h5 class = "col-12 mb-4 wind-speed"> Wind speed: </h5>
+                <h5 class = "col-12 mb-4 humidty"> Humidty: </h5>
               </div>  
 
             </div>
         </div>
 
-        <form action="" method ="post" class = "row g-3 mt-3 align-items-center">
-            <div class = "col-3">
-                <input type='text' class ="form-control" id = "city" required>
+        <form action="/" method ="post" class = "row g-3 mt-3 align-items-center">
+            <div class = "col-md-3 col-6">
+                <input type='text' class ="form-control" name = "city" required>
             </div>
-            <div class = "col-2">
-                <input type='text' class ="form-control" id = "country" required>
+            <div class = "col-md-2 col-6">
+                <input type='text' class ="form-control" name = "country" >
             </div>
-            <div class = "col-4">
+            <div class = "col-md-4 col-sm-2">
                 <button type="submit" class = "btn btn-dark">Find weather</button> 
             </div>
         </form>
     </section>
+
+
+     <!-- jquery -->
+     <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+
+     <!-- javascript -->
+     <!-- <script src = "script.js"></script> -->
 </body>
 </html>

@@ -91,6 +91,16 @@ body {
 
 .temp {
     text-align: center;
+}
+
+.tempIcon {
+    padding: 0;
+    width:70%;
+}
+
+.TempNum {
+    
+    font-size: clamp(3rem, 4.5vw, 5rem);
     
 }
 
@@ -103,6 +113,14 @@ form {
 
         margin: 0 1%;
     }
+
+    .tempIcon {
+        padding: 0;
+        width:100%;
+    }
     
+    form {
+        padding: 0 0% 0 3%;
+    }
     
 }
