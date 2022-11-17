@@ -4,6 +4,8 @@ const https = require("https")
 const  {JSDOM} = require( "jsdom" ); 
 const { removeData } = require("jquery");
 const { document } = (new JSDOM(`./views/weather.ejs`)).window;
+const fs = require('fs');
+const { json } = require("body-parser");
 //const jquery = require( "jquery" )(dom.window);
 
 const app = express()
@@ -23,6 +25,10 @@ let humidty
 let icon
 let windSpeed
 let post = false;
+
+
+
+
 
 // Main page
 app.get("/", (req, res)=> {
@@ -47,8 +53,8 @@ app.post("/", (req, res)=>{
             temp = parseInt(wthData.main.temp)
             weather = wthData.weather[0].main
             icon = wthData.weather[0].icon
-            windSpeed = wthData.wind.speed
-            humidty = wthData.main.humidity
+            windSpeed = wthData.wind.speed + "Km"
+            humidty = wthData.main.humidity + "%"
             
 
             
